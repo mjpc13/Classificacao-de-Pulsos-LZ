@@ -1,0 +1,89 @@
+\documentclass[10pt]{article} %this makes the whole document font size 10pt by default
+%\usepackage{newtxtext,newtxmath}
+%\renewcommand{\baselinestretch}{2} %double space
+\usepackage[english]{babel}
+\usepackage[paperheight=22.86cm,paperwidth=15.24cm,left=1.27cm,right=1.27cm,top=1.6cm,bottom=1.6cm,headheight=1in]{geometry}%margin specs go in here
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+%harvard citation style
+\usepackage{wrapfig}
+\usepackage{url}
+\renewcommand{\UrlFont}{\small\tt}
+\usepackage{cite}
+%\bibliographystyle{apacite} %apa citation if you need
+%\usepackage[pdfborder={0 0 0}]{hyperref}%for hyperlinks without ugly boxes
+\usepackage[table,xcdraw]{xcolor}
+
+\usepackage{graphbox,graphicx} %figures
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb}
+\usepackage{enumerate} %lists
+%\usepackage[font={small,sf},format=plain,labelfont=bf,up]{caption} %table and figure captions
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{sectsty}
+\sectionfont{\fontsize{18pt}{12pt}\selectfont} %setting section font size
+\usepackage{natbib} 
+\usepackage{titlesec} %adding that dot after the section number
+\usepackage{amsmath}
+\titlelabel{\thetitle.\quad}
+\usepackage{multicol}
+%\usepackage{flowchart}\TabPositions{0.5in,1.0in,1.5in,2.0in,2.5in,3.0in,3.5in,4.0in,4.5in,}
+
+
+
+%referencia a capitulos
+\usepackage{nameref}
+
+\usepackage{hyperref}
+\usepackage{float}
+\hypersetup{
+    colorlinks=true,
+    citecolor=brown,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+\urlstyle{same}
+
+\begin{document}
+
+
+\begin{center}
+    % adiciona os logos à página inicial
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.25]{Images/FCTUC_U_H}
+    \end{figure}
+    {\fontsize{17.28pt}{14pt}\selectfont Faculdade de Ciências e Tecnologia da Universidade de Coimbra \par}
+
+    %--------------------------------------------------------------
+    %Adiciona os titulos e autores
+    \vspace{2cm}
+    {\fontsize{21pt}{14pt}\selectfont Classificação de Pulsos em LZ \par}
+    \vspace{\baselineskip}
+    \vspace{0.5cm}
+    {\fontsize{12pt}{10pt}\selectfont Ciência dos Dados em Física \par\vspace{1em}}
+    \vspace{0.5cm}
+    {\fontsize{12pt}{10pt}\selectfont Mário Jorge Pinto Cristóvão - 2016231181 \par}
+    \vspace{\baselineskip}
+
+{\fontsize{9pt}{9pt}\selectfont  \par}
+
+
+\end{center}
+\newpage
+\paragraph{}
+
+\tableofcontents
+
+\newpage    
+
+\input{script.tex}
+
+\newpage
+%adiciona o ficheiro de bibliografias e o estilo, neste caso chama-se biblio.bib
+%\bibliography{biblio}
+%\bibliographystyle{plain}
+
+\end{document}
